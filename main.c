@@ -14,6 +14,7 @@ int main()
     int flag=0;
     int choice;
     int length;
+    int number;
     int a[10];
     int b[10];
     printf("Введите размер массива: ");
@@ -56,7 +57,9 @@ int main()
                 print(a,length);
                 break;
             case 6:
-
+                printf("Введите введите элемент массива: ");
+                scanf("%d", &number);
+                printf("%d элемент массива: %d", number, a[number]);
                 break;
             case 7:
                 printf("Введите новый размер массива: ");
