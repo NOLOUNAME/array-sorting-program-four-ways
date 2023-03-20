@@ -59,7 +59,10 @@ int main()
             case 6:
                 printf("Введите введите элемент массива: ");
                 scanf("%d", &number);
-                printf("%d элемент массива: %d", number, a[number]);
+                if (number+1<=length)
+                    printf("%d элемент массива: %d", number, a[number]);
+                else
+                    printf("Ошибка, повторите ввод.");
                 break;
             case 7:
                 printf("Введите новый размер массива: ");
